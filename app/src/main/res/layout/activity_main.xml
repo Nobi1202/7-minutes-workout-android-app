@@ -93,8 +93,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_calendar"
-            />
+            android:src="@drawable/ic_calendar" />
 
     </FrameLayout>
 
