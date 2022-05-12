@@ -199,7 +199,6 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     override fun onDestroy() {
-        super.onDestroy()
 
         if (restTimer != null) {
             restTimer?.cancel()
@@ -220,6 +219,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             player!!.stop()
         }
 
+        super.onDestroy()
         binding = null
     }
 
