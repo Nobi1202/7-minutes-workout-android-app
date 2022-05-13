@@ -10,13 +10,6 @@ import com.example.a7minutesworkout.databinding.ItemHistoryRowBinding
 class HistoryAdapter(private val items: ArrayList<String>) :
     RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
-    class ViewHolder(binding: ItemHistoryRowBinding) : RecyclerView.ViewHolder(binding.root) {
-
-        val llHistoryItemMain = binding.llHistoryItemMain
-        val tvItem = binding.tvItem
-        val tvPosition = binding.tvPosition
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             ItemHistoryRowBinding.inflate(
@@ -44,5 +37,12 @@ class HistoryAdapter(private val items: ArrayList<String>) :
 
     override fun getItemCount(): Int {
         return items.size
+    }
+
+    class ViewHolder(binding: ItemHistoryRowBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        val llHistoryItemMain = binding.llHistoryItemMain
+        val tvItem = binding.tvItem
+        val tvPosition = binding.tvPosition
     }
 }
