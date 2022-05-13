@@ -51,6 +51,5 @@ class FinishActivity : AppCompatActivity() {
             historyDao.insert(HistoryEntity(date))
             Log.e("Date : ", "Added...")
         }
-
     }
 }
